@@ -1,55 +1,505 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <script src="script.js"></script>
-    <title>IIC</title>
-</head>
-<body>
-    <!--BASIC NAVIGATION AND HERO SECTION SETUP-->
-    <section id="hero">
-        
-        <nav class="navbar navbar-expand-lg p-0">
-            <a class="navbar-brand" href="https://sunlimetech.com/" target="_blank"><span class="font-weight-bold h3">Sunlimetech</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="https://www.fiverr.com/share/qb8D02">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.fiverr.com/share/qb8D02">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.fiverr.com/share/qb8D02">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.fiverr.com/share/qb8D02">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link toggle-search" href="#!"><i class="fa fa-search"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="hero-heading">
-            <h1>We like to create awesome designs.</h1>
-            <p>Sunlimetech is an advanced and proactive at the app development and providing you all the ultimate software development services that you need. Sunlimetech ensure to offer you all the required & ultimate services meeting the advanced deadlines and requirements of the field. We believe in providing the ultimate services with quality and meeting all the deadlines, application development industry is at its peak and hitting the new dimensions rapidly.</p>
-        </div>
-        
-    </section>
-   
-    <!--BASIC NAVIGATION AND HERO SECTION SETUP ENDS-->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Real Estate</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/icon/xfavicon.png.pagespeed.ic.OMevRsZ0LO.webp">
+
+<link rel="stylesheet" href="https://preview.colorlib.com/theme/homofy/assets/css/A.bootstrap.min.css+owl.carousel.min.css+slicknav.css+animate.min.css+magnific-popup.css+fontawesome-all.min.css+themify-icons.css+slick.css+nice-select.css,Mcc.IXltbKurtg.css.pagespeed.cf.r3OKXmuhtC.css" />
+<link rel="stylesheet" href="https://preview.colorlib.com/theme/homofy/assets/css/A.style.css.pagespeed.cf.yWhmH3maIm.css">
+</head>
+
+<style>
+    .slider-area .hero-caption::before {
+    content: "";
+    position: absolute;
+    background: #040f2e;
+    width: 114%;
+    height: 202%;
+    top: -51%;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+.team-active{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+</style>
+
+
+<body>
+<header>
+<div class="header-area header-sticky">
+<div class="main-header ">
+<div class="container-fluid">
+<div class="d-flex align-items-center justify-content-between flex-wrap">
+<div class="header-info-left d-flex align-items-center">
+
+<div class="logo">
+<a href="index.html"><img src="data:image/webp;base64,UklGRgwDAABXRUJQVlA4TAADAAAviAAJEPfCoG0kR97yjT/d1w0NhW3bIB78fzExbNs2EpP0nhlu/zF7tYNIkhTpqo+Z7wT8+3gF718G81IgAgDw5XTg9UzG4+mUeX321n6LnaPCsChMMUREiEp0FB3XG0DxLzGYQuptlC8pQGEQiMKr1I9S0gaI0FLyAaBBCihb4tBgDAEGQRiRFkIKQgwBCuBDkQPUiCEKEDJAhB/elIUt/sIFgTyokznHyOV38kNGWPt1vOfpPoDatu1N3ubOJpt4kWA5ZHoQZZQs1cres7tXBmr///9A4gUb/Dmi/xOghdsnXNeBcPkdcO/UAWDjM93d77N3C3h6FXh7dt6yh8DjY1r/AJ/W5+znc+D/Q5Iu/AVfr83X8jv47ZKiJ38FHpyaqY3P8Mc5JY/cB3a/z9FhC/z9Q31vfoE35+fnxEPgwXH1L97Dp/W5+fkavl7Rwt9ew9cb87L6Dj6VGvDEv8CDU/0s2IgBIm3loNnMOgagiAQAG1mqPdgyYuj5nwcfaQEraeMLvDmvQY/cBnbDOAVx36aqyFKPiniTLWIMUHQ2gVxH7gC73zX0xmf48/wYS6R9SLjIZmqTdLNQAOqOByf9AtzViKu/w8fzIzjwuVQCdYKs0yQC0ARlFVDGlK6AIBVAIQGXNWr7DK4PlwOFJFVAlliSlJEwQJAkB81CLVBKNfis80ojG9gezgChswTkiU1JSykLTt1NYCFZcArApiZB3TzlPI0kA3XKRswgBdCWQJgiapBk8dVekIPKQa390XegAnIJajtcPO8Y8EA+TQGMcij2Rka30TTJYWUg7A1VnWK/WHXNCJsgi9MI6t0CXhPVLkHr2dwrAuxkhM5SjzyDCpbkUi6yOXE5UHQqIIupAchExACh46CZMjnwuVQCtRIGsEoEoAnKKqCctCXSvk3lgElpk3STTZqKhF9SSkDeQ1WiabXfLsLlMdRWDprNoD41Xn20VHuwZabxXo519NE/p3tMOrwaaz4PFG/XFl2ZrwG3ZurFENdm6sz1nYWNZho=" alt=""></a>
+</div>
+</div>
+<div class="header-righ d-flex">
+
+<div class="main-menu d-none d-lg-block">
+<nav>
+<ul id="navigation">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">Our Team</a></li>
+<li><a href="properties.html">Gallery</a></li>
+<li><a href="#">About</a>
+<!--
+<ul class="submenu">
+<li><a href="blog.html">Blog</a></li>
+<li><a href="blog_details.html">Blog Details</a></li>
+<li><a href="elements.html">Elements</a></li>
+</ul>
+-->    
+</li>
+<li><a href="contact.html">Join Us</a></li>
+</ul>
+</nav>
+</div>
+<ul class="header-social">
+<li>
+<div class="nav-search search-switch hearer_icon">
+
+</div>
+</li>
+<li class="header-right-btn">
+<a href="#" class="header-btn">Call Us: 10 (23) 252 3583</a>
+</li>
+</ul>
+</div>
+
+
+<div class="col-12">
+<div class="mobile_menu d-block d-lg-none"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+
+<section class="slider-area">
+<div class="slider-active">
+
+<div class="single-slider slider-bg1 hero-overly slider-height d-flex align-items-center">
+<div class="container">
+<div class="row">
+<div class="col-xxl-5 col-xl-6 col-lg-7 col-md-9">
+<div class="hero-caption">
+<h1 data-animation="bounceIn" data-delay="0.2s">Browse the Top
+<span>Modern Modular</span>Homes</h1>
+<p data-animation="fadeInUp" data-delay="0.4s">Homofy is a modular home marketplace that helps you
+find, compare, and purchase a prefab modular home.</p>
+<a href="#" class="border-btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">Browse Home Now</a>
+
+<!--
+<div class="support-img-cap">
+<span>View Promo Video</span>
+<div class="video-icon">
+<a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0">
+<img src="assets/img/icon/video-icon.svg" alt="">
+</a>
+</div>
+</div>
+-->
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="latest-items section-padding">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1606787619248-f301830a5a57?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="img-fluid" alt="Image" />
+                                    <div class="img-overlay bg-dark"></div>
+                                </div>
+                            </div>
+                            <!--end col-->
+
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end col-->
+    
+                    <div class="col-lg-6 col-md-6 col-6">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1630589153451-cc35edc573ed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80" class="img-fluid" alt="Image" />
+                                    <div class="img-overlay bg-dark"></div>
+                                </div>
+                            </div>
+                            <!--end col-->
+    
+                            <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
+                                    <img src="https://via.placeholder.com/600x401/FF7F50/000000" class="img-fluid" alt="Image" />
+                                    <div class="img-overlay bg-dark"></div>
+                                </div>
+                            </div>
+                            <!--end col-->
+                        </div>
+                        <!--end row-->
+                    </div>
+                    <!--end col-->
+                </div>
+                <!--end row-->
+            </div>
+            <!--end col-->
+    
+            <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                <div class="section-title ml-lg-5">
+                    <h1 class="text-custom font-weight-normal mb-3" style="font-size: 3.5rem; margin-bottom: 1em;">About Us</h1>
+                    <h4 class="title mb-4">
+                        Our mission is to <br />
+                        make your life easier.
+                    </h4>
+                    <p class="mb-0" style="color: black; font-weight: 400;">You have IDEAS and we give them the WINGS</p><br>
+                    <p>The E-Cell of MSIT gives innovative geniuses an open platform to gain knowledge about entrepreneurship, startups, ventures and the A-B-Cs of building businesses. Our sole aim is to let the concept of entrepreneurship burgeon and evolve. We believe that the desired support and guidance given at the right time can earn laurels. E-Cell MSIT has always motivated students to come up with innovative ideas and groomed them to the right note making them the desired and suitable for the industry and Ideal Entrepreneur.
+                        
+                        Founded in 2014, E-Cell MSIT works to ignite the spark of risk-taking, responsibility and the creative execution of ideas. Since then under the immense guidance of our mentors and seniors we have learnt and evolved to a large extent. Our team's hardwork has earned us immense appreciation and wide acceptance. In February 2017, CNBC India listed us among top 120 eCells in India.s</p>
+    
+                
+                </div>
+                <div class="col-12">
+                    <div class="mt-4 pt-2 text-right">
+                        <a href="#" class="btn_01 mt-20">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!--end col-->
+        </div>
+        <!--enr row-->
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+       <!--Carousel Wrapper-->
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data- target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+      <!--First slide-->
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+          alt="First slide">
+      </div>
+      <!--/First slide-->
+      <!--Second slide-->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+          alt="Second slide">
+      </div>
+      <!--/Second slide-->
+      <!--Third slide-->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+          alt="Third slide">
+      </div>
+      <!--/Third slide-->
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+  </div>
+  <!--/.Carousel Wrapper-->
+    </div>
+</section>
+
+
+
+<div class="team-area section-padding">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-xl-6 col-lg-6 col-md-9">
+<div class="section-tittle text-center mb-60">
+<h2>Our Team</h2>
+</div>
+</div>
+</div>
+<div class="team-active">
+<div class="single-team text-center">
+<div class="team-img">
+<img src="https://via.placeholder.com/150" alt="">
+
+<div class="team-social">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fas fa-globe"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="team-caption">
+<h3><a href="#">Buster Hyman</a></h3>
+<p>Real Estate Agent</p>
+</div>
+</div>
+<div class="single-team text-center">
+<div class="team-img">
+<img src="https://via.placeholder.com/150" alt="">
+
+<div class="team-social">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fas fa-globe"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="team-caption">
+<h3><a href="#">Buster Hyman</a></h3>
+<p>Real Estate Agent</p>
+</div>
+</div>
+<div class="single-team text-center">
+<div class="team-img">
+<img src="https://via.placeholder.com/150" alt="">
+
+<div class="team-social">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fas fa-globe"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="team-caption">
+<h3><a href="#">Buster Hyman</a></h3>
+<p>Real Estate Agent</p>
+</div>
+</div>
+<div class="single-team text-center">
+<div class="team-img">
+<img src="https://via.placeholder.com/150" alt="">
+<div class="team-social">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fas fa-globe"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="team-caption">
+<h3><a href="#">Buster Hyman</a></h3>
+<p>Real Estate Agent</p>
+</div>
+</div>
+<div class="single-team text-center">
+<div class="team-img">
+    <img src="https://via.placeholder.com/150" alt="">
+
+<div class="team-social">
+<ul>
+<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#"><i class="fas fa-globe"></i></a></li>
+</ul>
+</div>
+</div>
+<div class="team-caption">
+<h3><a href="#">Buster Hyman</a></h3>
+<p>Real Estate Agent</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="visit-tailor-area fix">
+
+<div class="tailor-offers"></div>
+
+<div class="tailor-details">
+<h2>Subscribe Newsletter</h2>
+<p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+<div class="subscribe-now">
+<input type="text" placeholder="Enter your email">
+<button class="submit-btn2">Subscribe</button>
+</div>
+</div>
+</div>
+
+</main>
+
+
+
+
+
+<footer>
+<div class="footer-wrapper">
+
+<div class="footer-area footer-padding">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-xl-3 col-lg-3 col-md-8 col-sm-8" style="width: 30%;">
+<div class="single-footer-caption mb-50">
+<div class="single-footer-caption mb-30">
+
+<div class="footer-logo mb-35">
+<a href="index.html"><img src="https://preview.colorlib.com/theme/homofy/assets/img/logo/xlogo2_footer.png.pagespeed.ic._gsId_wPM_.webp" alt=""></a>
+</div>
+<div class="footer-tittle">
+<div class="footer-pera">
+<p>Duis aute irure dolor inasfa reprehenderit in voluptate velit esse cillum</p>
+<p>Copyright © 2021 IIC MSIT.<br>All Rights Reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-8">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle mb-50">
+<h4>Contact Us</h4>
+<ul>
+<li><a href="https://goo.gl/maps/2U76WTTwxy52">Janakpuri, New Delhi</a></li>
+<li class="number2"><a href="#"><span class="__cf_email__" data-cfemail="3d5e5253495c5e497d5158535952135e5250">example@example.com</span></a></li>
+<!--<li class="number"><a href="#">10 (87) 738-3940</a></li> -->
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Follow Us</h4>
+<ul>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+<div class="single-footer-caption mb-50">
+<div class="footer-tittle">
+<h4>Navigation</h4>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Initiatives</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="footer-bottom-area">
+<div class="container">
+<div class="footer-border">
+<div class="row">
+<div class="col-xl-12 ">
+<div class="footer-copy-right text-center">
+<p>Made with Love by Technical Department of IIC</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</footer>
+
+<div id="back-top">
+<a class="wrapper" title="Go to Top" href="#">
+<div class="arrows-container">
+<div class="arrow arrow-one">
+</div>
+<div class="arrow arrow-two">
+</div>
+</div>
+</a>
+</div>
+
+
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="assets/js/popper.min.js+bootstrap.min.js.pagespeed.jc.3vWtJ-wQT0.js"></script><script>eval(mod_pagespeed_Agyp$_fe21);</script>
+<script>eval(mod_pagespeed_4ORpLk0NZ8);</script>
+
+<script src="assets/js/owl.carousel.min.js+slick.min.js.pagespeed.jc.5l5GfATuHI.js"></script><script>eval(mod_pagespeed_6aT6rocNq_);</script>
+<script>eval(mod_pagespeed_F4kI8B80N6);</script>
+<script src="assets/js/jquery.slicknav.min.js+wow.min.js+jquery.magnific-popup.js+jquery.nice-select.min.js+jquery.counterup.min.js+waypoints.min.js+contact.js.pagespeed.jc.h_DKStQ68a.js"></script><script>eval(mod_pagespeed_jAJDo9KRWc);</script>
+
+<script>eval(mod_pagespeed_W_Z_5IS9dT);</script>
+<script>eval(mod_pagespeed_Me1U_OUBFc);</script>
+<script>eval(mod_pagespeed_ULZrGKgTad);</script>
+<script>eval(mod_pagespeed_vCjm19qugw);</script>
+<script>eval(mod_pagespeed_hsi1zF_0F0);</script>
+
+<script>eval(mod_pagespeed_j$IkimulwP);</script>
+<script src="assets/js/jquery.form.js+jquery.validate.min.js+mail-script.js+jquery.ajaxchimp.min.js+plugins.js+main.js.pagespeed.jc.OwCdwS6AXN.js"></script><script>eval(mod_pagespeed_amzw72SyGP);</script>
+<script>eval(mod_pagespeed_tDgsb_wXd1);</script>
+<script>eval(mod_pagespeed_8BQf1yWwzu);</script>
+<script>eval(mod_pagespeed_8LBtC1JpPW);</script>
+
+<script>eval(mod_pagespeed_HXFy71c$R_);</script>
+<script>eval(mod_pagespeed_usIYSqgdrF);</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+        </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>    
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"650134a09b662254","version":"2021.5.1","si":10}'></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"rayId":"68ad5503afc91c55","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.8.1","si":10}'></script>
 </body>
 </html>
