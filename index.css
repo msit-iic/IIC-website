@@ -1,0 +1,21 @@
+.slider-area .hero-caption::before {
+    content: "";
+    position: absolute;
+    background: #040f2e;
+    width: 114%;
+    height: 202%;
+    top: -51%;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+}
+.team-active{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.logo a img{
+    height: 80px;
+width: 80px;
+margin-left: -70px;
+}
