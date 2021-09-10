@@ -23,3 +23,13 @@ margin-left: -70px;
 .slider-bg1{
     background-image: url(/images/digital-orange-technology-background-vector.jpg);
 }
+
+#about{
+    color: black; 
+    font-weight: 400;
+}
+
+.footer-logo{
+    height: 104px;
+margin-left: 53px;
+}
