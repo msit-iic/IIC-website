@@ -1,7 +1,7 @@
 .slider-area .hero-caption::before {
     content: "";
     position: absolute;
-    background: #040f2e;
+    background: #460707;
     width: 114%;
     height: 202%;
     top: -51%;
@@ -18,4 +18,18 @@
     height: 80px;
 width: 80px;
 margin-left: -70px;
+}
+
+.slider-bg1{
+    background-image: url(/images/digital-orange-technology-background-vector.jpg);
+}
+
+#about{
+    color: black; 
+    font-weight: 400;
+}
+
+.footer-logo{
+    height: 104px;
+margin-left: 53px;
 }
