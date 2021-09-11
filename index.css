@@ -1,10 +1,11 @@
 .slider-area .hero-caption::before {
     content: "";
     position: absolute;
-    background: #460707;
+    background: #040f2e;
     width: 114%;
-    height: 202%;
-    top: -51%;
+    height:100vh;
+    margin-top:1.5em ;
+    position: absolute;
     bottom: 0;
     left: 0;
     z-index: -2;
@@ -21,7 +22,11 @@ margin-left: -70px;
 }
 
 .slider-bg1{
-    background-image: url(/images/digital-orange-technology-background-vector.jpg);
+    background-image: url(/images/msit.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat:no-repeat ;
+    background-size: cover;
 }
 
 #about{
