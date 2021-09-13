@@ -64,3 +64,38 @@ margin-left: 53px;
     -webkit-filter: grayscale(0);
 }
 
+.textarea{
+    background: transparent;
+    border:0px;
+    border-bottom: 2px solid #beccd6;
+    height: 60px;
+    font-size: 16px;
+    margin-bottom: 27px;
+    padding: 0;
+    width: 100%;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #beccd6 !important;
+}
+textarea::placeholder{
+    color: #beccd6 !important;   
+}
+@media (min-width: 1400px){
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1140px;
+}
+}
+.footer-tittle{
+    line-height: 1;
+}
+.link-icon{
+    width: 28px;
+    height: 18px;
+}
+.footer-tittle ul li{
+    margin-bottom: 15px;
+    display: flex;
+    grid-gap: 15px;
+}
