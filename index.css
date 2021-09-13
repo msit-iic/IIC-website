@@ -22,7 +22,7 @@ margin-left: -70px;
 }
 
 .slider-bg1{
-    background-image: url(/images/msit.jpg);
+    background-image: url(images/msit.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat:no-repeat ;
@@ -38,3 +38,29 @@ margin-left: -70px;
     height: 104px;
 margin-left: 53px;
 }
+
+.colabs{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 1rem auto 3rem;
+    justify-content: center;
+}
+.colab-box{
+    width: 16%;
+    height: 8rem;
+    overflow: hidden;
+    margin: 2rem;
+}
+.image-colab{
+    width: 100%;
+    height: 100%;
+    transition:all 0.3s ease;
+    filter: grayscale(1);
+    -webkit-filter:grayscale(1);
+    cursor: pointer;
+}
+.image-colab:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
