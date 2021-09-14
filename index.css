@@ -68,12 +68,13 @@ margin-left: 53px;
     background: transparent;
     border:0px;
     border-bottom: 2px solid #beccd6;
-    height: 60px;
+    height: 37px;
     font-size: 16px;
     margin-bottom: 27px;
     padding: 0;
     width: 100%;
     color: #fff;
+    margin-bottom:3em;
 }
 
 input::placeholder {
@@ -93,9 +94,45 @@ textarea::placeholder{
 .link-icon{
     width: 28px;
     height: 18px;
+    transition: 0.3s ease-in-out;
+    
 }
 .footer-tittle ul li{
     margin-bottom: 15px;
     display: flex;
     grid-gap: 15px;
+    transition: 0.2s ease;
 }
+
+.tailor-offers{
+    background-image:url('images/thought.svg') !important;
+    background-size: contain !important
+}
+
+.footer-tittle ul li a:hover > .link-icon{
+    width: 38px;
+    height: 18px;
+}
+/*.team-img:after{
+    content: " ";
+    width: 100%;
+    height: 150px;
+    display: block;
+    /* top: 100%; */
+    /* bottom: 0; */
+    /*background-repeat: NO-REPEAT;
+    /* right: 0; 
+    position: absolute;
+    background-image: url(images/Group.png);
+    background-size: contain;
+    z-index: 99999;
+    /* transform: skew(
+-20deg, 
+-1deg) translate(14px, 25px); 
+    overflow: visible;
+    transform: rotate(
+90deg);
+}*/
+
+
+
