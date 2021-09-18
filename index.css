@@ -17,14 +17,14 @@
 
 .logo a img{
     height: 80px;
-width: 80px;
-margin-left: -70px;
+    width: 80px;
+
 }
 
 .slider-bg1{
-    background-image: url(images/msit.jpg);
+    background-image: url(images/home.webp);
     background-attachment: fixed;
-    background-position: center;
+    background-position: left top;
     background-repeat:no-repeat ;
     background-size: cover;
 }
@@ -46,10 +46,10 @@ margin-left: 53px;
     justify-content: center;
 }
 .colab-box{
-    width: 16%;
-    height: 8rem;
+    width: auto;
+    height: 11rem;
     overflow: hidden;
-    margin: 2rem;
+    margin: 1rem;
 }
 .image-colab{
     width: 100%;
@@ -187,8 +187,50 @@ textarea::placeholder{
 
 /* for mobile */
 @media (max-width:480px){
-    .team-active{
-        grid-template-columns: repeat(1,1fr);
+    .team-active {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .block-20 {
+        width: 100%;
+        height: 120px;
+    }
+    .team-area .single-team .team-img {
+        margin-bottom: 6px;
+    }
+    .team-area .single-team .team-caption h3 a {
+        font-size: 18px;
+    }
+    .team-area .single-team .team-caption p {
+        font-size: 14px;
+    }
+    .mt-4 {
+        margin-top: -0.5rem!important;
+    }
+    .slider-area .hero-caption::before {
+        background: #040f2ea1;
+        height:115vh; 
+        left: -11px; 
+        z-index: -2;
+    }
+    .slider-bg1 {
+        background-position: center bottom;
+    }
+    .mt-4 > .pt-2 > .text-right{
+        display: flex;
+        justify-content: center;
+    }
+    .colab-box {
+        width: auto;
+        height: 6rem;
+        overflow: hidden;
+        margin: 0.5rem;
+    }
+    .mobile_menu .slicknav_menu .slicknav_btn {
+        top: -43px;
+    }
+    .logo a img{
+        width: 60px;
+        height: auto;
     }
 }
 
