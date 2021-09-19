@@ -3,7 +3,7 @@
     position: absolute;
     background: #040f2e;
     width: 114%;
-    height:100vh;
+    height:110vh;
     margin-top:1.5em ;
     position: absolute;
     bottom: 0;
@@ -12,7 +12,7 @@
 }
 .team-active{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
 }
 
 .logo a img{
@@ -83,6 +83,18 @@ margin-left: 53px;
     width: 100%;
     color: #fff;
     margin-bottom:3em;
+}
+
+.hero-caption .subscribe-now input{
+    background: none;
+    padding: 0;
+    width: 100%;
+    height: 37px;
+    border: 0;
+    border-bottom: 2px solid #beccd6;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 25px;
 }
 
 input::placeholder {
@@ -172,7 +184,7 @@ textarea::placeholder{
     position: relative;
     display: block;
     width: 100%;
-    height: 350px;
+    height: 280px;
 }
 .block-20:hover{
     transform: scale(1.1);
@@ -205,11 +217,11 @@ textarea::placeholder{
 /* for mobile */
 @media (max-width:480px){
     .team-active {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
     .block-20 {
         width: 100%;
-        height: 120px;
+        height: 250px;
     }
     .team-area .single-team .team-img {
         margin-bottom: 6px;

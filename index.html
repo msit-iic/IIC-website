@@ -20,63 +20,6 @@
 
 
 <body>
-<!--
-<header>
-<div class="header-area header-sticky">
-<div class="main-header ">
-<div class="container-fluid">
-<div class="d-flex align-items-center justify-content-between flex-wrap">
-<div class="header-info-left d-flex align-items-center">
-
-<div class="logo">
-<a href="index.html"><img src="images/del22.jpg" alt="logo"></a>
-</div>
-</div>
-<div class="header-righ d-flex">
-
-<div class="main-menu d-none d-lg-block">
-<nav>
-<ul id="navigation">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">Our Team</a></li>
-<li><a href="properties.html">Gallery</a></li>
-<li><a href="#">About</a></li>
-<li><a href="contact.html">Join Us</a></li>
-</ul>
-</nav>
-</div>
-<ul class="header-social">
-<li>
-<div class="nav-search search-switch hearer_icon">
-
-</div>
-</li>
-<li class="header-right-btn">
-<a href="#" class="header-btn">Call Us: 10 (23) 252 3583</a>
-</li>
-</ul> 
-</div>
-
-
-<div class="col-12">
-<div class="mobile_menu d-block d-lg-none">
-    <nav>
-        <ul id="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">Our Team</a></li>
-        <li><a href="properties.html">Gallery</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="contact.html">Join Us</a></li>
-        </ul>
-    </nav>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</header>
--->
 <header>
     <div class="header-area header-sticky">
     <div class="main-header ">
@@ -93,11 +36,11 @@
     <div class="main-menu d-none d-lg-block">
     <nav>
     <ul id="navigation">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="properties.html">Gallery</a></li>
-    <li><a href="#">Our Team</a></li>
-    <li><a href="contact.html">Join Us</a></li>
+    <li><a href="#slider-area">Home</a></li>
+    <li><a href="#about-us">About</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#team">Our Team</a></li>
+    <li><a href="#contact">Contact</a></li>
     </ul>
     </nav>
     </div>
@@ -134,10 +77,11 @@
             <span class="slicknav_icon-bar"></span></span>
         </a>
     <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-    <li><a href="index.html" role="menuitem" tabindex="-1">Home</a></li>
-    <li><a href="about.html" role="menuitem" tabindex="-1">About</a></li>
-    <li><a href="properties.html" role="menuitem" tabindex="-1">Gallery</a></li>
-    <li><a href="contact.html" role="menuitem" tabindex="-1">Our Team</a></li>
+    <li><a href="#slider-area" role="menuitem" tabindex="-1">Home</a></li>
+    <li><a href="#about-us" role="menuitem" tabindex="-1">About</a></li>
+    <li><a href="#gallery" role="menuitem" tabindex="-1">Gallery</a></li>
+    <li><a href="#team" role="menuitem" tabindex="-1">Our Team</a></li>
+    <li><a href="#contact">Contact</a></li>
     </ul></div></div>
     </div>
     </div>
@@ -145,27 +89,9 @@
     </div>
     </div>
     </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <main>
 
-<section class="slider-area" style="overflow: hidden;">
+<section class="slider-area" style="overflow: hidden;" id="slider-area">
 <div class="slider-active">
 
 <div class="single-slider slider-bg1 hero-overly slider-height d-flex align-items-center">
@@ -175,23 +101,12 @@
 <div class="hero-caption">
 <h1 data-animation="bounceIn" data-delay="0.2s">Institute
 <span>Innovation</span>Council</h1>
-<p data-animation="fadeInUp" data-delay="0.4s">Homofy is a modular home marketplace that helps you
-find, compare, and purchase a prefab modular home.</p>
-<a href="#" class="border-btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">Events</a>
-
-<!-- <form action="index.html">
-    <input type="text" placeholder="Enter Email adress">
-    <button type="submit">Subscribe</button>
-</form> -->
-
-<!-- <div class="support-img-cap">
-<span>View Promo Video</span>
-<div class="video-icon">
-<a class="popup-video btn-icon" href="https://www.youtube.com/watch?v=up68UAfH0d0">
-<img src="assets/img/icon/video-icon.svg" alt="">
-</a>
+<p data-animation="fadeInUp" data-delay="0.4s">Institution Innovation Council of MSIT is established under the directions of Ministry of Education to promote innovation and entrepreneurship in the Institution.</p>
+<div class="subscribe-now">
+<input type="email" placeholder="Your@example.com" id="email">
+<a href="#" class="border-btn hero-btn" data-animation="fadeInUp" data-delay="0.7s">Join Us</a>
 </div>
-</div> -->
+
 
 
 
@@ -204,7 +119,7 @@ find, compare, and purchase a prefab modular home.</p>
 </section>
 
 
-<section class="latest-items section-padding">
+<section class="latest-items section-padding" id="about-us">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
     <div class="container">
         <div class="row justify-content-center">
@@ -227,7 +142,7 @@ find, compare, and purchase a prefab modular home.</p>
                     <hr>
                     <p class="mb-0" id="about">What do we do?</p><br>
                     <p class="mb-0">
-                          To conduct various Innovation and entrepreneurship-related activities
+                          We conduct various Innovation and entrepreneurship-related activities
   Identify and reward innovations and share success stories.
   Organize periodic workshops/ seminars/ interactions with entrepreneurs, investors, professionals and create a mentor pool for student innovators.
 Network with peers and national entrepreneurship development organizations.
@@ -265,7 +180,7 @@ Organize Hackathons, idea competition, mini-challenges etc. with the involvement
 </section>
 
 
-<section class="section-padding">
+<section class="section-padding" id="gallery">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-6 col-md-9">
@@ -287,19 +202,19 @@ Organize Hackathons, idea competition, mini-challenges etc. with the involvement
     <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
-        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80.jpg"
           alt="First slide">
       </div>
       <!--/First slide-->
       <!--Second slide-->
       <div class="carousel-item">
-        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1604933762023-7213af7ff7a7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
           alt="Second slide">
       </div>
       <!--/Second slide-->
       <!--Third slide-->
       <div class="carousel-item">
-        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+        <img class="d-block w-100" src="https://images.unsplash.com/photo-1618365908648-e71bd5716cba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80"
           alt="Third slide">
       </div>
       <!--/Third slide-->
@@ -322,107 +237,8 @@ Organize Hackathons, idea competition, mini-challenges etc. with the involvement
 
 
 
-<div class="team-area section-padding">
-    <div class="container">
-    <div class="row justify-content-center">
-    <div class="col-xl-6 col-lg-6 col-md-9">
-    <div class="section-tittle text-center mb-60">
-    <h2>Faculty Advisors</h2>
-    </div>
-    </div>
-    </div>
-    <div class="team-active">
-    <div class="single-team text-center">
-    <div class="team-img">
-    <a href="#" class="block-20" style="background-image: url(https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);"></a>
-    
-    <div class="team-social">
-    <ul>
-    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fas fa-globe"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="team-caption">
-    <h3><a href="#">Buster Hyman</a></h3>
-    <p>Real Estate Agent</p>
-    </div>
-    </div>
-    <div class="single-team text-center">
-    <div class="team-img">
-        <a href="#" class="block-20" style="background-image: url(https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);"></a>
-    
-    
-    <div class="team-social">
-    <ul>
-    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fas fa-globe"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="team-caption">
-    <h3><a href="#">Buster Hyman</a></h3>
-    <p>Real Estate Agent</p>
-    </div>
-    </div>
-    <div class="single-team text-center">
-    <div class="team-img">
-        <a href="#" class="block-20" style="background-image: url(https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);"></a>
-    
-    
-    <div class="team-social">
-    <ul>
-    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fas fa-globe"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="team-caption">
-    <h3><a href="#">Buster Hyman</a></h3>
-    <p>Real Estate Agent</p>
-    </div>
-    </div>
-    <div class="single-team text-center">
-    <div class="team-img">
-        <a href="#" class="block-20" style="background-image: url(https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);"></a>
-    
-    <div class="team-social">
-    <ul>
-    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fas fa-globe"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="team-caption">
-    <h3><a href="#">Buster Hyman</a></h3>
-    <p>Real Estate Agent</p>
-    </div>
-    </div>
-    <div class="single-team text-center">
-    <div class="team-img">
-        <a href="#" class="block-20" style="background-image: url(https://images.unsplash.com/photo-1607346256330-dee7af15f7c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1700&q=80);"></a>
-    
-    
-    <div class="team-social">
-    <ul>
-    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-    <li><a href="#"><i class="fas fa-globe"></i></a></li>
-    </ul>
-    </div>
-    </div>
-    <div class="team-caption">
-    <h3><a href="#">Buster Hyman</a></h3>
-    <p>Real Estate Agent</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
+
+
 <!--Sponsors-->
 
 
@@ -439,8 +255,12 @@ Organize Hackathons, idea competition, mini-challenges etc. with the involvement
     
     <div class="colabs">
         <div class="colab-box">
-            <img src="images/IIC_msit.png" alt="" class="image-colab">
+            <img src="images/sponsors/ieee-msit.png" alt="" class="image-colab">
         </div>
+        <div class="colab-box">
+            <img src="images/sponsors/ecell-msit.png" alt="" class="image-colab">
+        </div>
+        <!--
         <div class="colab-box">
             <img src="images/IIC_msit.png" alt="" class="image-colab">
         </div>
@@ -456,16 +276,174 @@ Organize Hackathons, idea competition, mini-challenges etc. with the involvement
         <div class="colab-box">
             <img src="images/IIC_msit.png" alt="" class="image-colab">
         </div>
-        <div class="colab-box">
-            <img src="images/IIC_msit.png" alt="" class="image-colab">
-        </div>
+        -->
     </div>
     </div>
 </div>
 
 
 <!--Sponsors end-->
+<div class="team-area section-padding" id="team" style="margin-bottom: 30px;">
+    <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-xl-6 col-lg-6 col-md-9">
+    <div class="section-tittle text-center mb-60">
+    <h2>Faculty Advisors</h2>
+    </div>
+    </div>
+    </div>
+    <div class="team-active">
+        
+    <div class="single-team text-center">
+    <div class="team-img">
+    <a href="#" class="block-20" style="background-image: url(images//faculty/one.png);"></a>
+    
+    <div class="team-social">
+    <ul>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="team-caption">
+    <h3><a href="#">Ms. Geetika Dhand</a></h3>
+    <p>Innovation Activity Coordinator</p>
+    </div>
+    </div>
+    <div class="single-team text-center">
+    <div class="team-img">
+        <a href="#" class="block-20" style="background-image: url(images/faculty/two.png);"></a>
+    
+    
+    <div class="team-social">
+    <ul>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="team-caption">
+    <h3><a href="#">Ms. Geetanjali Sharma</a></h3>
+    <p>Internship Coordinator</p>
+    </div>
+    </div>
+    <div class="single-team text-center">
+    <div class="team-img">
+        <a href="#" class="block-20" style="background-image: url(images/faculty/three.png);"></a>
+    
+    
+    <div class="team-social">
+    <ul>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="team-caption">
+    <h3><a href="#">Dr. Sudesh Pahal</a></h3>
+    <p>Convener</p>
+    </div>
+    </div>
+    <div class="single-team text-center">
+    <div class="team-img">
+        <a href="#" class="block-20" style="background-image: url(images/faculty/four.png);"></a>
+    
+    <div class="team-social">
+    <ul>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="team-caption">
+    <h3><a href="#">Dr. Neeru Rathee</a></h3>
+    <p>Startup Coordinator</p>
+    </div>
+    </div>
+    <div class="single-team text-center">
+    <div class="team-img">
+        <a href="#" class="block-20" style="background-image: url(images/faculty/five.png);"></a>
+    
+    
+    <div class="team-social">
+    <ul>
+    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fas fa-globe"></i></a></li>
+    </ul>
+    </div>
+    </div>
+    <div class="team-caption">
+    <h3><a href="#">Dr. Kavita Sheoran</a></h3>
+    <p>Innovation Activity Member</p>
+    </div>
+    </div>
+    <div class="single-team text-center">
+        <div class="team-img">
+            <a href="#" class="block-20" style="background-image: url(images/faculty/six.png);"></a>
+        
+        
+        <div class="team-social">
+        <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="team-caption">
+        <h3><a href="#">Mr. Adeel Hashmi</a></h3>
+        <p>Social Media Coordinator</p>
+        </div>
+    </div>
+    <div class="single-team text-center">
+        <div class="team-img">
+            <a href="#" class="block-20" style="background-image: url(images/faculty/seven.png);"></a>
+        
+        
+        <div class="team-social">
+        <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="team-caption">
+        <h3><a href="#">Mr. Sitender Malik</a></h3>
+        <p>ARIIA, NIRF Coordinator</p>
+        </div>
+    </div>
+    <div class="single-team text-center">
+        <div class="team-img">
+            <a href="#" class="block-20" style="background-image: url(images/faculty/eight.png);"></a>
+        
+        
+        <div class="team-social">
+        <ul>
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fas fa-globe"></i></a></li>
+        </ul>
+        </div>
+        </div>
+        <div class="team-caption">
+        <h3><a href="#">Dr. K. P. Chaudhary</a></h3>
+        <p>Dr. K. P. Chaudharyt</p>
+        </div>
+    </div>
 
+
+    </div>
+    </div>
+    </div>
+
+<!--Commenting out teamm section for now-->
+<!--
 <div class="team-area section-padding">
 <div class="container">
 <div class="row justify-content-center">
@@ -568,8 +546,10 @@ Organize Hackathons, idea competition, mini-challenges etc. with the involvement
 </div>
 </div>
 
+-->
+<!--team section ends-->
 
-<div class="visit-tailor-area fix">
+<div class="visit-tailor-area fix" id="contact">
 
 <div class="tailor-offers"></div>
 
