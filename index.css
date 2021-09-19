@@ -191,6 +191,15 @@ textarea::placeholder{
     .team-active{
         grid-template-columns: repeat(2,1fr);
     }
+
+
+    .slicknav_menu .slicknav_icon-bar {
+        background-color: #dca73a !important;
+    }
+    .visit-tailor-area .tailor-details {
+        width: 100%;
+        padding: 50px 30px;
+    }
 }
 
 /* for mobile */
