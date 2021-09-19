@@ -20,6 +20,14 @@
     width: 80px;
 
 }
+.is-sticky{
+        position: fixed; 
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: auto;
+        z-index: 4;
+}
 
 .slider-bg1{
     background-image: url(images/home.webp);
