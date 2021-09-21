@@ -1,3 +1,4 @@
+
 .slider-area .hero-caption::before {
     content: "";
     position: absolute;
@@ -269,3 +270,4 @@ textarea::placeholder{
 .team-area .single-team .team-img{
     box-shadow: 0px 9px 20px 0px #0000003b;
 }
+
