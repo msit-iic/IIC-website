@@ -1,0 +1,6 @@
+.update-admin-profile form#verification-code,
+.update-admin-profile form#update-password,
+.warning,.danger,.success
+{   
+    display: none;
+}
