@@ -1,0 +1,7 @@
+section{
+    padding: 100px;
+}
+
+.success,.info,.error{
+    display: none;
+}

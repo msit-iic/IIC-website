@@ -1,0 +1,99 @@
+:root{
+    --main-content-box-shadow:rgba(0,0,0,.4);
+    --company-info-bg:#008080;
+    --company-info-color:#fff;
+    --login-form-bg:#fff;
+    --login-form-border:#ccc;
+    --input-focus-border:#aaa;
+    --input-focus-box-shadow:rgba(0,0,0,.4);
+    --btn-bg:#fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-content{
+	width: 50%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px var(--main-content-box-shadow);
+	margin: 5em auto;
+	display: flex;
+}
+.company__info{
+	background-color:var(--company-info-bg);
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: var(--company-info-color);
+}
+.company__info img{
+	width:120px;
+	height: 80px;
+}
+
+@media screen and (max-width: 642px){
+	.main-content{width: 70%;}
+}
+@media screen and (max-width:400px){
+	.main-content{width: 100%;}
+}
+
+
+.row > h2{
+	color:var(--company-info-bg);
+}
+.login_form{
+	background-color: var(--login-form-bg);
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top:1px solid var(--login-form-border);
+	border-right:1px solid var(--login-form-border);
+}
+form{
+	padding: 0 2em;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid var(--input-focus-border);
+	padding: 1em .5em .5em;
+	padding-left: 2em;
+	outline:none;
+	margin:1.5em auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border:0px solid transparent;
+	outline:none;
+	border-bottom: 2px solid var(--input-focus-border);
+}
+.login-btn{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:var(--company-info-bg);
+	font-weight: 600;
+	background-color: var(--btn-bg);
+	border: 1px solid var(--company-info-bg);
+	margin-bottom: 1em;
+	outline: none;
+	padding: .375rem .75rem;
+    font-size: 1rem;
+	cursor: pointer;
+    line-height: 1.5;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.login-btn:hover, .login-btn:focus{
+	background-color: var(--company-info-bg);
+	color:var(--btn-bg);
+	outline: none;
+}
+.error,.warning,.success,form#verification-code,
+form#update-password{
+	display: none;
+}
