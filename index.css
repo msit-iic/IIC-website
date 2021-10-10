@@ -1,3 +1,10 @@
+.carousel-indicators li {
+    background-color: #FFC839;
+}
+
+.image-view-faculty{
+    width: 20%;
+}
 
 .slider-area .hero-caption::before {
     content: "";
@@ -216,16 +223,19 @@ textarea::placeholder{
         width: 100%;
         padding: 50px 30px;
     }
+    .card1 img {
+        height: 12em !important;
+      }
 }
 
 /* for mobile */
 @media (max-width:480px){
     .team-active {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
     }
     .block-20 {
         width: 100%;
-        height: 250px;
+        height: 182px;
     }
     .team-area .single-team .team-img {
         margin-bottom: 6px;
@@ -265,9 +275,63 @@ textarea::placeholder{
         width: 60px;
         height: auto;
     }
+
+    .card1 {
+        width: 80% !important;
+      }
+    
+    .only-mobile{
+        display: grid !important;
+    }
+    .carousel{
+        display: None;
+    }
+
 }
 
 .team-area .single-team .team-img{
     box-shadow: 0px 9px 20px 0px #0000003b;
+}
+
+
+
+
+
+
+/* Testing slider */
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card1 img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card1 {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+    width: 24%;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #e1e1e1;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+.card1 img {
+  height: 15em;
+}
+  
+.only-mobile{
+    display: None;
 }
 
