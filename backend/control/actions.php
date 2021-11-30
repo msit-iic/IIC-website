@@ -491,7 +491,7 @@ Admin Profile Operations :
             }
 
             // Validations Done
-            $sql1 = "INSERT INTO `mailing-list` (`name`,`email`,`message`) VALUES ('" . mysqli_real_escape_string($link, $name) . "','" . mysqli_real_escape_string($link, $email) . "','" . mysqli_real_escape_string($link, $message) . "')";
+            $sql1 = "INSERT INTO `message-data` (`name`,`email`,`message`) VALUES ('" . mysqli_real_escape_string($link, $name) . "','" . mysqli_real_escape_string($link, $email) . "','" . mysqli_real_escape_string($link, $message) . "')";
             $result1 = mysqli_query($link, $sql1);
 
             if ($result1) {
