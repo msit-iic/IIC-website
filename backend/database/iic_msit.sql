@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 12, 2021 at 01:51 PM
+-- Generation Time: Nov 30, 2021 at 11:20 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -40,7 +40,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `username`, `email`, `password`, `code`) VALUES
-(1, 'sinhaamar', 'sinhaamar68@gmail.com', '28328745181c63e077cc6fbb2aaceb98', '1b29e6');
+(1, 'sinhaamar', 'sinhaamar68@gmail.com', 'a6f0c2287a7088649767d8f8de405281', 'e689cf');
 
 -- --------------------------------------------------------
 
@@ -74,6 +74,19 @@ INSERT INTO `mailing-list` (`id`, `email`, `created_at`) VALUES
 (2, 'sinhaamar68@gmail.com', '2021-09-15 15:55:10'),
 (3, 'sinnaamar68@gmail.com', '2021-09-15 15:58:09');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `message-data`
+--
+
+CREATE TABLE `message-data` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `email` text NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -91,6 +104,12 @@ ALTER TABLE `mailing-list`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `message-data`
+--
+ALTER TABLE `message-data`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -105,6 +124,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `mailing-list`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `message-data`
+--
+ALTER TABLE `message-data`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
