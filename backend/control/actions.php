@@ -50,7 +50,7 @@ Admin Authentication Operations :
                     $error = "Could not find that Username-Password Combination ! Please try Again !";
                 }
             } else {
-                $error="Username Invalid. Access Denied.";
+                $error = "Username Invalid. Access Denied.";
             }
             if ($error != "") {
                 echo $error;
@@ -215,7 +215,7 @@ Admin Authentication Operations :
     }
 
 
-/* ----------------------------------------------------------------------------------------------------------
+    /* ----------------------------------------------------------------------------------------------------------
 Admin Profile Operations : 
 ------------------------------------------------------------------------------------------------------------*/
 
@@ -265,7 +265,7 @@ Admin Profile Operations :
                     mysqli_query($link, $query);
                     echo "200";
                 } else {
-                    $error = "Couldn't Create User - Please try again later ";
+                    $error = "Couldn't Create User - Please try again later ".mysqli_error($link);
                 }
             }
 
@@ -313,7 +313,7 @@ Admin Profile Operations :
     }
 
 
-    // User Interface For Testing   
+    // ==================-----------------  Subscribe to Mails Response :  User Interface For Testing ----------------============  
     if ($_GET["process"] == "subscribe") {
         if (!isset($_POST["email"])) {
             include_once("../views/access_denied.php");
@@ -321,9 +321,15 @@ Admin Profile Operations :
         } else {
             $email = $_POST["email"];
             if ($email == "") {
-                echo "No Email ID provided";    
+                echo "No Email ID provided";
                 exit();
             }
+
+            if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+                echo "Entered Email Address is Invalid.";
+                exit();
+            }
+
             $checkmail = fetchData("mailing-list", "*", 0, $email, "email");
             if (is_array($checkmail)) {
                 // Mail Already Subscribed
@@ -336,10 +342,10 @@ Admin Profile Operations :
                 // Validations Done
                 $sql1 = "INSERT INTO `mailing-list` (`email`,`created_at`) VALUES ('" . mysqli_real_escape_string($link, $email) . "','" . mysqli_real_escape_string($link, $dateTime) . "')";
                 $result1 = mysqli_query($link, $sql1);
-                
+
                 if ($result1) {
                     // Time to Send Subscription Mail
-                        // Sending Verification Code via Mail : 
+                    // Sending Verification Code via Mail : 
                     $to = $email;
 
                     // Email subject 
@@ -350,7 +356,7 @@ Admin Profile Operations :
                     $fromName = 'IIC MSIT';
 
                     // Email Content  
-    $htmlContent = '<html>
+                    $htmlContent = '<html>
     <head>
         <style type="text/css">
             body{
@@ -389,15 +395,15 @@ Admin Profile Operations :
             </style>    
     </head>
     <body style="padding:20px;background-color:whitesmoke;">';
-$htmlContent .= '<section class="mail-body" style="background-color:whitesmoke;padding:20px;">
+                    $htmlContent .= '<section class="mail-body" style="background-color:whitesmoke;padding:20px;">
         <div class="section-title" style="background-color:whitesmoke;">
             Instituition\'s Innovation Council of MSIT
         </div>
         <div class="section-title-logo" style="display:flex;justify:space-around;">    
-            <img src="https://iic.msit.in/assets/img/logo.png" alt="IIC, MSIT">                                     
-            <img src="https://iic.msit.in/assets/img/logo_name.png" alt="Instituition\'s Innovation Council,MSIT">                                     
+            <img src="https://iic.msit.in/backend/assets/img/logo.png" alt="IIC, MSIT">                                     
+            <img src="https://iic.msit.in/backend/assets/img/logo_name.png" alt="Instituition\'s Innovation Council,MSIT">                                     
         </div>';
-$htmlContent .= '<div>
+                    $htmlContent .= '<div>
             Hi ' . $email . ',<br><br>
 
             Thanks for subscribing to newsletter and blog of Institution Innovation Council of MSIT.<br><br>
@@ -412,14 +418,14 @@ $htmlContent .= '<div>
             Cheers,<br>
             IIC MSIT<br><br>
             
-            <a href="https://iic.msit.in" target="_blank">Web: https://iic.msit.in</a><br>  
-            <a href="https://www.instagram.com/iic.msit">Instagram: https://www.instagram.com/iic.msit</a><br>
-            <a href="https://facebook.com/iicmsit">Facebook: https://facebook.com/iicmsit</a><br>
-            <a href="https://www.linkedin.com/company/iic-msit/">LinkedIn: https://www.linkedin.com/company/iic-msit/ </a><br>
+            Web: <a href="https://iic.msit.in" target="_blank">https://iic.msit.in</a><br>  
+            Instagram: <a href="https://www.iic.msit.in/Instagram" target="_blank">https://www.iic.msit.in/Instagram</a><br>
+            Facebook: <a href="https://www.iic.msit.in/Facebook" target="_blank">https://www.iic.msit.in/Facebook</a><br>
+            LinkedIn: <a href="https://www.iic.msit.in/LinkedIn" target="_blank">https://www.iic.msit.in/LinkedIn </a><br>
             
         </div>
     </section>';
-$htmlContent .= '</body>
+                    $htmlContent .= '</body>
     </html>';
 
 
@@ -439,8 +445,8 @@ $htmlContent .= '</body>
 
 
                     if (mail($to, $subject, $message, $headers)) {
-                        echo "200";                
-                    }else{
+                        echo "200";
+                    } else {
                         // Unable to Send Mail 
                         echo "500";
                     }
@@ -448,6 +454,155 @@ $htmlContent .= '</body>
                     // Unable to Insert Data to the Database
                     echo "Something went Wrong! Please try again later";
                 }
+            }
+        }
+    }
+
+
+
+
+
+
+    // ==================-----------------  Message Sent Response :  User Interface For Testing ----------------============  
+    if ($_GET["process"] == "message") {
+        if (!isset($_POST["email"])) {
+            include_once("../views/access_denied.php");
+            exit();
+        } else {
+
+            $name = $_POST["name"];
+            $email = $_POST["email"];
+            $message = $_POST["message"];
+
+            if ($email == "") {
+                echo "No Email ID provided.";
+                exit();
+            } else if ($name == "") {
+                echo "Full Name not provided.";
+                exit();
+            } else if ($message == "") {
+                echo "Message not provided.";
+                exit();
+            }
+
+            if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+                echo "Entered Email Address is Invalid.";
+                exit();
+            }
+
+            // Validations Done
+            $sql1 = "INSERT INTO `mailing-list` (`name`,`email`,`message`) VALUES ('" . mysqli_real_escape_string($link, $name) . "','" . mysqli_real_escape_string($link, $email) . "','" . mysqli_real_escape_string($link, $message) . "')";
+            $result1 = mysqli_query($link, $sql1);
+
+            if ($result1) {
+                // Time to Send Subscription Mail
+                // Sending Verification Code via Mail : 
+                $to = $email;
+
+                // Email subject 
+                $subject = "Thank You for Contacting Instituition's Innovation Council, MSIT.";
+
+                // Sender 
+                $from = 'noreply@iic.msit.in';
+                $fromName = 'IIC MSIT';
+
+                // Email Content  
+                $htmlContent = '<html>
+    <head>
+        <style type="text/css">
+            body{
+                margin:0px;
+                padding:20px;
+                background-color:whitesmoke;
+            }   
+            .section-title{
+                font-size:40px;
+                line-height:50px;
+                font-family:"Times New Roman", Times, serif;
+                font-weight:500;
+                text-align:center;
+                vertical-align: middle;
+            }
+            .section-title-logo{
+                height:200px;
+                width:100%;
+            }
+            .section-title-logo img{
+                margin:20px 40px;
+            }
+            .mail-body{
+                position:relative;
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                font-size:16px;
+                line-height:20px;
+            }
+            .mail-body a{
+                text-decoration:none;
+                color:black;
+                font-weight:800;
+                font-size:14px;
+                line-height:17.5px;
+            }
+            </style>    
+    </head>
+    <body style="padding:20px;background-color:whitesmoke;">';
+                $htmlContent .= '<section class="mail-body" style="background-color:whitesmoke;padding:20px;">
+        <div class="section-title" style="background-color:whitesmoke;">
+            Instituition\'s Innovation Council of MSIT
+        </div>
+        <div class="section-title-logo" style="display:flex;justify:space-around;">    
+            <img src="https://iic.msit.in/backend/assets/img/logo.png" alt="IIC, MSIT">                                     
+            <img src="https://iic.msit.in/backend/assets/img/logo_name.png" alt="Instituition\'s Innovation Council,MSIT">                                     
+        </div>';
+                $htmlContent .= '<div>
+            Hi ' . $email . ',<br><br>
+
+            Thanks for contacting Institution Innovation Council of MSIT.<br><br>
+            
+            We value your interactions very highly! <br>
+            We will get back to you soon.! <br>
+
+            Keep Innovating!!!<br>
+            
+            <br>
+            Cheers,<br>
+            IIC MSIT<br><br>
+
+            Web: <a href="https://iic.msit.in" target="_blank">https://iic.msit.in</a><br>  
+            Instagram: <a href="https://www.iic.msit.in/Instagram" target="_blank">https://www.iic.msit.in/Instagram</a><br>
+            Facebook: <a href="https://www.iic.msit.in/Facebook" target="_blank">https://www.iic.msit.in/Facebook</a><br>
+            LinkedIn: <a href="https://www.iic.msit.in/LinkedIn" target="_blank">https://www.iic.msit.in/LinkedIn </a><br>
+                      
+        </div>
+    </section>';
+                $htmlContent .= '</body>
+    </html>';
+
+
+                // Header for sender info 
+                $headers = "From: $fromName" . " <" . $from . ">";
+
+                // Boundary  
+                $semi_rand = md5(time());
+                $mime_boundary = "==Multipart_Boundary_x{$semi_rand}x";
+
+                // Headers for attachment  
+                $headers .= "\nMIME-Version: 1.0\n" . "Content-Type: multipart/mixed;\n" . " boundary=\"{$mime_boundary}\"";
+
+                // Multipart boundary  
+                $message = "--{$mime_boundary}\n" . "Content-Type: text/html; charset=\"UTF-8\"\n" .
+                    "Content-Transfer-Encoding: 7bit\n\n" . $htmlContent . "\n\n";
+
+
+                if (mail($to, $subject, $message, $headers)) {
+                    echo "200";
+                } else {
+                    // Unable to Send Mail 
+                    echo "500";
+                }
+            } else {
+                // Unable to Insert Data to the Database
+                echo "Something went Wrong! Please try again later";
             }
         }
     }
