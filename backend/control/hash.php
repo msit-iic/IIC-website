@@ -5,6 +5,13 @@ $userName = "iic_msit";
 $password = "iicmsit@2021";
 $dbName = "iic_msit";
 
+// Local Development Credentials :
+// $host = "localhost";
+// $userName = "root";
+// $password = "";
+// $dbName = "iic_msit";
+
+
 $link = mysqli_connect($host, $userName, $password, $dbName);
 if (mysqli_connect_error()) {
     print_r(mysqli_connect_error());
