@@ -114,6 +114,12 @@ input::placeholder {
 textarea::placeholder{
     color: #beccd6 !important;   
 }
+
+#ideathon{
+  line-height: 1.6;
+}
+
+
 @media (min-width: 1400px){
 .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1140px;
@@ -138,6 +144,11 @@ textarea::placeholder{
 .tailor-offers{
     background-image:url('images/thought.svg') !important;
     background-size: contain !important
+}
+
+.ideathon-img{
+    background-image: url('images/Ideathon.jpeg') !important;
+    background-size: contain !important;
 }
 
 .footer-tittle ul li a:hover > .link-icon{
