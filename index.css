@@ -305,9 +305,45 @@ textarea::placeholder{
 }
 
 
+/*ideathon popup*/
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+  }
 
-
-
+  #boxes .window {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 440px;
+    height: 200px;
+    display: none;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  #boxes #dialog {
+    height: auto;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+    transform: translate(-50%,-50%);
+  }
+  
+  #popupfoot {
+    font-size: 16pt;
+    position: absolute;
+    bottom: 0px;
+    width: 250px;
+    left: 250px;
+  }
 
 /* Testing slider */
 .cards-wrapper {
@@ -345,4 +381,6 @@ textarea::placeholder{
 .only-mobile{
     display: None;
 }
+
+
 
