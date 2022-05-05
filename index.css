@@ -335,6 +335,7 @@ textarea::placeholder{
     font-family: 'Segoe UI Light', sans-serif;
     font-size: 15pt;
     transform: translate(-50%,-50%);
+    top: 225%;
   }
   
   #popupfoot {

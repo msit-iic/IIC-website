@@ -62,7 +62,7 @@ $(document).ready(function() {
   var winW = $(window).width();
                 
   //Set the popup window to center
-  $(id).css('top', '50%');
+  $(id).css('top', '60%');
   $(id).css('left', '50%');
   $(id).css('transform', 'translate(-50%,-50%);');
     
